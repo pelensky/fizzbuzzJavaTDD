@@ -10,6 +10,13 @@ public class FizzbuzzTest {
   }
 
   @Test
+  public void returnsTwoIfGivenTwo() {
+    Fizzbuzz fizzbuzz = new Fizzbuzz();
+    String result = fizzbuzz.getResult(2);
+    assertEquals("2", result);
+  }
+
+  @Test
   public void returnsFizzIfGivenThree() {
     Fizzbuzz fizzbuzz = new Fizzbuzz();
     String result = fizzbuzz.getResult(3);
